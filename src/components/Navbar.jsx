@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SignUp from './Signup';
 
 function Navbar() {
   return (
-    <header>
-        <h1 className='navbarh1'>hello</h1>
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
+    <header className='navbar'>
+        <p className='navbarh1'>Full Thing</p>
+        <nav className='nav-links'>
+      <Link className='nav-links' to='/'>Home</Link>
+      <Link className='nav-links' to='/About'>About</Link> 
+      <Link className='nav-links' to='/Signup'>Sign Up</Link> 
+      </nav>
+
     </header>
   );
 }
