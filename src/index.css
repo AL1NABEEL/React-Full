@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 body {
   margin: 0;
   background-color: rgb(47, 45, 45);
@@ -9,7 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -18,7 +24,10 @@ code {
   justify-content: space-between;
   background-color: rgb(86, 84, 84);
   padding: 10px;
-  border: solid black 0px 0px 50px 0px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  position:fixed;
+  margin-top: -50px;
+  width: 1570px;
   
 }
 .nav-links{
@@ -33,5 +42,21 @@ code {
   font-size: 30px;
   font-weight: bold;
   font-family:cursive ;
-
 }
+.main{
+  text-align: center;
+}
+.add-post{
+  border: solid rgb(65, 189, 59) 2px;
+  padding-bottom: 20px;
+  max-width: 900px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 100px;
+  margin-left: 350px;
+  margin-top: 50px;
+}
+input{
+  border-radius: 5px;
+  
+} */

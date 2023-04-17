@@ -53,9 +53,8 @@ function Home() {
     };
 
     return(
-    <>
-    <h1>Home Page</h1>
-    <div>users</div>
+    <> 
+    <main className='main'>
       {error ? (
         <>{error}</>
       ) : (
@@ -64,8 +63,8 @@ function Home() {
             <Loading />
           ) : (
             <div>
-              <div>
-                <h1>Add Post</h1>
+              <div className='add-post'>
+                <h1 className='text-center text-blue-400'>Add Post</h1>
                 <form onSubmit={handleSubmit}>
                   <input
                     type='text'
@@ -95,6 +94,7 @@ function Home() {
           )}
         </div>
       )}
+      </main>
     </>
     )
 }
