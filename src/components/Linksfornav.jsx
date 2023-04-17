@@ -1,15 +1,14 @@
 export const links = [
     {
-      link: '/',
-      name: 'Home',
+    link: '/',
+    name: 'Home',
     },
     {
-      link: '/About',
-      name: 'About',
+    link: '/About',
+    name: 'About',
     },
     {
-      link: '/Signup',
-      name: 'Signup',
+    link: '/Signup',
+    name: 'Signup',
     },
-  ];
-  
+];

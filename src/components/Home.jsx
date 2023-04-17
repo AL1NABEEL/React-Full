@@ -54,17 +54,17 @@ function Home() {
 
     return(
     <> 
-    <main className='main'>
+    <main className=''>
       {error ? (
         <>{error}</>
       ) : (
-        <div>
+        <div className=''>
           {loading ? (
             <Loading />
           ) : (
             <div>
-              <div className='add-post'>
-                <h1 className='text-center text-blue-400'>Add Post</h1>
+              <div className=''>
+                <h1 className='text-center text-blue-400 '>Add Post</h1>
                 <form onSubmit={handleSubmit}>
                   <input
                     type='text'
