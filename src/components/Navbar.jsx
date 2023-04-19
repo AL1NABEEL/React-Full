@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { links } from './Linksfornav';
-
+import BurgerMenu from '../assets/menu.png';
 
 
   export default function Navbar() {
@@ -17,6 +17,13 @@ import { links } from './Linksfornav';
               {link.name}
             </Link>
           ))} </nav> 
+          <img
+        className='block md:hidden'
+        src={BurgerMenu}
+        width={20}
+        height={20}
+        alt='buger menu'
+      />{' '}
       </header>
     );
   }
