@@ -65,31 +65,12 @@ function Home() {
             <div className=' '>
               <div className=''>
                 <h1 className='text-center text-xl font-bold mt-2'>Posts Submitted By Users</h1>
-                {/* <h1 className='text-center text-blue-400 '>Add Post</h1> */}
-                {/* <form onSubmit={handleSubmit}>
-                  <input
-                    type='text'
-                    value={title}
-                    name='title'
-                    onChange={handleTitle}
-                    placeholder='Name'
-                  />
-                  <input
-                    type='text'
-                    value={body}
-                    onChange={handleBody}
-                    name='body'
-                    placeholder='Body'
-                  />
-                  <button type='submit'>Submit</button>
-                </form> */}
-                
               </div>
               {posts &&
                 posts.map((post, i) => (
                   <div className='m-5 bg-gradient-to-br from-blue-500 to-gray-500 p-5 rounded-xl hover:text-white max-w-3xl relative mx-auto capitalize' key={post.id}>
                     <p className="">{post.title}</p>
-                    {/* <button onClick={() => deletePost(post.id)}>delete</button> */}
+                   
                   </div>
                 ))}
             </div>
