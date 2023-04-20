@@ -6,8 +6,6 @@ function Home() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
-    const [title, setTitle] = useState('');
-    const [body, setBody] = useState('');
 
     const fetchData = ()=>{
         axios.get('https://jsonplaceholder.typicode.com/posts?_page=1&_limit=20')
@@ -26,31 +24,6 @@ function Home() {
     useEffect(()=>{
         fetchData();
     },[])
-
-    const deletePost = (id) => {
-        axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
-        fetchData();
-    };
-    
-    const handleTitle = (event) => {
-        setTitle(event.target.value);
-      };
-    
-      const handleBody = (e) => {
-        setBody(e.target.value);
-      };
-
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        axios
-          .post('https://jsonplaceholder.typicode.com/posts', {
-            title,
-            body,
-          })
-          .then((response) => {
-            fetchData();
-    });
-    };
 
     return(
     <> 
